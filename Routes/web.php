@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('notificationmodule')->group(function() {
-    Route::get('/', 'NotificationModuleController@index');
+use Modules\NotificationModule\Http\Controllers\NotificationController;
+
+Route::prefix('notifications')->group(function() {
+    Route::get('/', [NotificationController::class , 'getUserNotification'])->name('user.all.notifications');
 });

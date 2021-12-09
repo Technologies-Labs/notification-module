@@ -3,9 +3,11 @@
 namespace Modules\NotificationModule\Entities;
 
 use App\Models\User;
+use App\Scopes\OrderingScope;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
+use Modules\NotificationModule\Scopes\NotificationScope;
 
 class Notification extends Model
 {
@@ -16,4 +18,10 @@ class Notification extends Model
     {
         return $this->belongsTo(User::class);
     }
+    protected static function booted()
+    {
+        static::addGlobalScope(new OrderingScope);
+        static::addGlobalScope(new NotificationScope);
+    }
+
 }
