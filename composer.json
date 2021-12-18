@@ -1,5 +1,6 @@
 {
-    "name": "nwidart/notificationmodule",
+    "name": "technologies-labs/notificationmodule",
+    "type":"laravel-module",
     "description": "",
     "authors": [
         {
