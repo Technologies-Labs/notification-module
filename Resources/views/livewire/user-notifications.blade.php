@@ -4,7 +4,7 @@
         <div class="tab-content">
             <div class="tab-pane active fade show" id="notifications">
                 <h4><i class="icofont-bell-alt"></i>
-                    <a href="{{ route('user.all.notifications') }}" title="" data-ripple="">All Notifications</a>
+                    <a href="{{ route('user.all.notifications') }}" title="" data-ripple="">الأشعارات</a>
                 </h4>
                 <ul class="notificationz">
 
@@ -42,7 +42,7 @@
                     @endif
 
                 </ul>
-                <a href="{{ route('user.all.notifications') }}" title="" class="main-btn" data-ripple="">view all</a>
+                <a href="{{ route('user.all.notifications') }}" title="" class="main-btn" data-ripple="">عرض المزيد</a>
             </div>
         </div>
     </div>
