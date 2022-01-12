@@ -1,5 +1,5 @@
 <div class="main-wraper" wire:ignore.self>
-    <h3 class="main-title">All Notifications</h3>
+    <h3 class="main-title">الأشعارات</h3>
     <div class="editing-interest">
         <div class="notification-box">
             <ul>
